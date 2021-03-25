@@ -27,4 +27,10 @@ public class HomePageTests extends TestBase{
 	
 	}
 	
+	@Test
+	public void searchFunctionality() {
+		
+		System.out.println("this is the search functionality....");
+	}
+	
 }
