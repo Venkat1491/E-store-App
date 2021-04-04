@@ -19,6 +19,10 @@ public class HomePage {
 	
 	WebElement title;
 	
+	@FindBy(xpath = "//b[text()=\"Cart\"]")
+	
+	WebElement CartLink;
+	
 	public String verifyHomePagetitle() {
 		
 		String title = driver.getTitle();
@@ -40,4 +44,67 @@ public class HomePage {
 		
 		SignInLink.click();
 	}
+	
+	@FindBy(xpath = "//a[text() = \"Contact us\"]")
+	
+	WebElement Contactus;
+	
+	public boolean getStatusOfContactUsLink() {
+		
+		boolean status = Contactus.isDisplayed();
+		return status;
+	}
+	
+	
+	public void clickContactusLink() {
+		
+		Contactus.click();
+		
+	}
+	
+	@FindBy(xpath = "//input[@placeholder=\"Search\"]")
+	
+	WebElement SearchBar;
+	
+	public boolean getStatusOfSearchBar() {
+		
+	boolean status = SearchBar.isDisplayed();
+	return status;
+	}
+	
+	public void verifyValidationofSearchFunctionality() {
+		
+		SearchBar.click();
+		SearchBar.sendKeys("test");	
+	}
+	
+	@FindBy(xpath = "//button[@name=\"submit_search\"]")
+	
+	WebElement Searchicon;
+	
+	public void clickSearchicon() {
+		
+		Searchicon.click();
+	}
+		
+	@FindBy(xpath = "//p[contains(text(), 'No results were found for your search')]")
+
+	WebElement actualText;
+	
+	public String getactualText() {
+		
+	String title = actualText.getText();
+	return title;
+	
+	}
+	
+	public void clickCartLink() {
+		
+		CartLink.click();
+		
+	}
+	
 }
+
+
+
