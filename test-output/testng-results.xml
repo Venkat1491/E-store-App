@@ -1,37 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="3" total="15" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22385" started-at="2021-04-14T02:36:36Z" finished-at="2021-04-14T02:36:59Z">
+  <suite name="Default suite" duration-ms="54202" started-at="2021-04-14T02:48:09Z" finished-at="2021-04-14T02:49:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22385" started-at="2021-04-14T02:36:36Z" finished-at="2021-04-14T02:36:59Z">
-      <class name="tests.LoginPageTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginPageTests@1bce4f0a]" name="setUp" is-config="true" duration-ms="7861" started-at="2021-04-14T02:36:36Z" finished-at="2021-04-14T02:36:44Z">
+    <test name="Default test" duration-ms="54202" started-at="2021-04-14T02:48:09Z" finished-at="2021-04-14T02:49:03Z">
+      <class name="tests.SearchPageTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.SearchPageTests@4883b407]" name="setUp" is-config="true" duration-ms="8120" started-at="2021-04-14T02:48:09Z" finished-at="2021-04-14T02:48:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:6, instance:tests.LoginPageTests@1bce4f0a]" name="verifyLoginPageTitle" duration-ms="1313" started-at="2021-04-14T02:36:44Z" finished-at="2021-04-14T02:36:46Z">
+        <test-method status="PASS" signature="searchFunctionalitytest()[pri:11, instance:tests.SearchPageTests@4883b407]" name="searchFunctionalitytest" duration-ms="1" started-at="2021-04-14T02:49:03Z" finished-at="2021-04-14T02:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFunctionalitytest -->
+      </class> <!-- tests.SearchPageTests -->
+      <class name="tests.HomePageTests">
+        <test-method status="PASS" signature="verifyHomePage()[pri:1, instance:tests.HomePageTests@7d9d1a19]" name="verifyHomePage" duration-ms="15" started-at="2021-04-14T02:48:17Z" finished-at="2021-04-14T02:48:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method status="PASS" signature="verifySignInLink()[pri:2, instance:tests.HomePageTests@7d9d1a19]" name="verifySignInLink" duration-ms="1742" started-at="2021-04-14T02:48:17Z" finished-at="2021-04-14T02:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInLink -->
+        <test-method status="PASS" signature="verifyContactUsLink()[pri:3, instance:tests.HomePageTests@7d9d1a19]" name="verifyContactUsLink" duration-ms="1095" started-at="2021-04-14T02:48:19Z" finished-at="2021-04-14T02:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactUsLink -->
+        <test-method status="PASS" signature="verifySearchFunctionality()[pri:4, instance:tests.HomePageTests@7d9d1a19]" name="verifySearchFunctionality" duration-ms="26748" started-at="2021-04-14T02:48:20Z" finished-at="2021-04-14T02:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method status="PASS" signature="verifyCartLink()[pri:5, instance:tests.HomePageTests@7d9d1a19]" name="verifyCartLink" duration-ms="767" started-at="2021-04-14T02:48:47Z" finished-at="2021-04-14T02:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartLink -->
+      </class> <!-- tests.HomePageTests -->
+      <class name="tests.LoginPageTests">
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:6, instance:tests.LoginPageTests@39c0f4a]" name="verifyLoginPageTitle" duration-ms="1023" started-at="2021-04-14T02:48:47Z" finished-at="2021-04-14T02:48:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method status="PASS" signature="createAccountwithInvalidEmail()[pri:7, instance:tests.LoginPageTests@1bce4f0a]" name="createAccountwithInvalidEmail" duration-ms="4393" started-at="2021-04-14T02:36:46Z" finished-at="2021-04-14T02:36:50Z">
+        <test-method status="PASS" signature="createAccountwithInvalidEmail()[pri:7, instance:tests.LoginPageTests@39c0f4a]" name="createAccountwithInvalidEmail" duration-ms="4349" started-at="2021-04-14T02:48:48Z" finished-at="2021-04-14T02:48:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountwithInvalidEmail -->
-        <test-method status="PASS" signature="createAnAccountWithValidEmail()[pri:8, instance:tests.LoginPageTests@1bce4f0a]" name="createAnAccountWithValidEmail" duration-ms="226" started-at="2021-04-14T02:36:50Z" finished-at="2021-04-14T02:36:50Z">
+        <test-method status="PASS" signature="createAnAccountWithValidEmail()[pri:8, instance:tests.LoginPageTests@39c0f4a]" name="createAnAccountWithValidEmail" duration-ms="246" started-at="2021-04-14T02:48:53Z" finished-at="2021-04-14T02:48:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccountWithValidEmail -->
-        <test-method status="PASS" signature="verifyloginwithinvalidCredentials()[pri:9, instance:tests.LoginPageTests@1bce4f0a]" name="verifyloginwithinvalidCredentials" duration-ms="2708" started-at="2021-04-14T02:36:50Z" finished-at="2021-04-14T02:36:53Z">
+        <test-method status="PASS" signature="verifyloginwithinvalidCredentials()[pri:9, instance:tests.LoginPageTests@39c0f4a]" name="verifyloginwithinvalidCredentials" duration-ms="2260" started-at="2021-04-14T02:48:53Z" finished-at="2021-04-14T02:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginwithinvalidCredentials -->
-        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:10, instance:tests.LoginPageTests@1bce4f0a]" name="verifyForgotPasswordLink" duration-ms="5826" started-at="2021-04-14T02:36:53Z" finished-at="2021-04-14T02:36:59Z">
+        <test-method status="PASS" signature="verifyForgotPasswordLink()[pri:10, instance:tests.LoginPageTests@39c0f4a]" name="verifyForgotPasswordLink" duration-ms="7750" started-at="2021-04-14T02:48:55Z" finished-at="2021-04-14T02:49:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgotPasswordLink -->
       </class> <!-- tests.LoginPageTests -->
+      <class name="pages.SearchPage">
+        <test-method status="PASS" signature="searchfunctionality()[pri:0, instance:pages.SearchPage@1794d431]" name="searchfunctionality" duration-ms="14" started-at="2021-04-14T02:48:17Z" finished-at="2021-04-14T02:48:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchfunctionality -->
+      </class> <!-- pages.SearchPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
