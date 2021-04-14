@@ -13,7 +13,7 @@ public class LoginPageTests extends TestBase{
 		
 		hp.clickSignInLink();
 		
-		String expectedLoginPageTitle = "";
+		String expectedLoginPageTitle = "Login - My Store";
 		String actualLoginPageTitle = lp.getLoginPageTitle();
 		Assert.assertEquals(actualLoginPageTitle, expectedLoginPageTitle, "Login Page title not matched");
 		
